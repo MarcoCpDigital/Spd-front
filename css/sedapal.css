@@ -11,9 +11,68 @@ a:link, a:visited, a:active {
 }
 
 /*
-Sprites
+Menu Full Page
 */
+.menu-fullpage{
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0093D2;
+    box-shadow: 0 8px 22px #00000029;
+    color: #fff;
+    min-height: 70vh;
+    z-index: 9999;
+}
 
+.menu-fullpage .container{
+	padding-top: 5%;
+}
+
+.menu-fullpage h2{
+	font-size: 35px;
+	font-weight: 600;
+}
+
+.menu-fullpage h3{
+	font-size: 35px;
+	font-weight: 600;
+}
+
+.menu-fullpage ul{
+	padding-left: .5em;
+}
+
+.menu-fullpage li{
+	font-size: 20px;
+	list-style: none;
+}
+
+.menu-fullpage li:before{
+	content: '-';
+	margin-right: 15px;
+}
+
+.menu-fullpage a{
+	color:#fff;
+}
+
+.menu-fullpage .sedapal-cuadro-icono{
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 0 0 15px 0;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.menu-fullpage #cerrar-menu{
+	font-size: 5em;
+    line-height: .5em;
+    font-family: sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+}
 
 /*
 Cabecera
@@ -365,7 +424,8 @@ Cabecera
     width: 100%;
     margin: 15% 0 0 -25%;
     color: #fff;
-    font-size: 1.3em;	
+    font-size: 1.3em;
+    text-align: center;	
 }
 
 .accesos-rapidos{
@@ -914,7 +974,6 @@ Cabecera
 
 	/*Accesos rapidos*/
 	.accesos-rapidos{
-		margin-top: -50px;
 	}
 
 	.accesos-rapidos .titulo{
@@ -936,16 +995,32 @@ Cabecera
 	}
 	
 	.accesos-rapidos .flecha-antes{
-		left: 30px;
+		left: 0;
 	}
 
 	.accesos-rapidos .flecha-despues{
-		right: 30px;
+		right: 0;
 	}
 	
 	.accesos-rapidos .col-md-12:first-child{
 		padding-right: 15px;
     	padding-left: 15px;
+	}
+
+	.sedapal-cuadro-icono span {
+	    font-size: 50px;
+	}
+
+	.sedapal-cuadro-icono h4{
+		font-size: 0.9em;
+	}
+
+	.servicios .sedapal-cuadro-icono span {
+	    font-size: 65px;
+	}
+
+	.servicios .sedapal-cuadro-icono h4{
+		font-size: 1.1em;
 	}
 
 	/*Servicios*/
@@ -980,17 +1055,28 @@ Cabecera
 	}
 
 	/*Enlaces interes*/
+	.enlaces-externos{
+		padding: 100px 0;
+	}
+
 	.enlaces-externos .titulo{
 		margin-left: 70px;
 	}
 	.enlaces-externos .enlaces{
-		padding: 5px 5px 5px 35px;
+		padding: 5px 5px 5px 5px;
 	}
 	.enlaces-externos .enlaces:before{
 		width: 50px;
 	    height: 90px;
 	    top: -61px;
 	    left: 0px;
+	}
+
+	.enlaces-externos .titulo:after{
+		width: 80px;
+	    height: 130px;
+	    top: -7px;
+	    left: 6px;
 	}
 	
 	.noticia-principal{
@@ -1075,8 +1161,39 @@ Cabecera
 		margin-bottom: 1rem!important;
 	}
 
+	.footer img{
+		width: 50%;
+		margin-top: 1em;
+	}
+
 	.subfooter .col-md-4{
 		text-align: center !important;
+	}
+
+	/*Menu*/
+	.menu-fullpage #cerrar-menu{
+		font-size: 3em;
+		margin-bottom: .2em !important;
+	}
+
+	.menu-fullpage h2,.menu-fullpage h3{
+    	font-size: 30px;
+	}
+
+	.menu-fullpage h2{
+    	margin-top: 30px;
+	}
+
+	.menu-fullpage li {
+    	font-size: 18px;
+	}
+
+	.menu-fullpage .sedapal-cuadro-icono span{
+		font-size: 40px;
+	}
+
+	.menu-fullpage .sedapal-cuadro-icono h4{
+		font-size: 0.7em;
 	}
 
 }

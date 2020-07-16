@@ -1,3 +1,13 @@
+// Menu
+$(".menu-hamburguesa").click(function(){
+	$(".menu-fullpage").toggle();
+});
+$("#cerrar-menu").click(function(){
+	$(".menu-fullpage").toggle();
+});
+
+
+
 // Footer
 if (screen.width<768){
 	$(".contenido-menu").hide();
