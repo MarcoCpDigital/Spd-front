@@ -1,12 +1,12 @@
 // Menu
 $(".menu-hamburguesa").click(function(){
-	$(".menu-fullpage").toggle();
-});
-$("#cerrar-menu").click(function(){
-	$(".menu-fullpage").toggle();
+	$(".menu-fullpage").toggle("abierto");
 });
 
-
+$(".desplegable").click(function(){
+	$(this).parent().find(".submenu:first").toggle("abierto");
+	$(this).parent().find(".desplegable").toggleClass("abierto");
+});
 
 // Footer
 if (screen.width<768){
