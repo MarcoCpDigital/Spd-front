@@ -418,6 +418,7 @@ Cabecera
 	background-color: #fff;
 	padding: 10px 20px;
 	border-radius: 0 0 15px 0;
+	width: 100%;
 }
 
 .principal-noticias .noticia .titulo a{
@@ -551,6 +552,13 @@ Cabecera
     font-size: 75px;
 }
 
+.sedapal-cuadro-icono .sepadal-cuadro-img{
+	background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+}
+
 .sedapal-cuadro-icono span:before{
 	color: #fff;
 }
@@ -575,6 +583,13 @@ Cabecera
 
 .accesos-rapidos .col-md-12:first-child{
 	padding: 0 115px;
+}
+
+.accesos-rapidos span.img-accesos-rapidos{
+	background-size: cover;
+    background-position: center;
+    height: 50%;
+    width: 50%;
 }
 
 .accesos-rapidos .titulo{
@@ -636,11 +651,11 @@ Cabecera
 	background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     left: 0;
-    top: 36%;
+    top: 43%;
     transform: rotate(180deg);
     cursor: pointer;
 }
@@ -650,11 +665,11 @@ Cabecera
 	background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     right: 0;
-    top: 36%;
+    top: 43%;
     cursor: pointer;
 }
 
@@ -1368,6 +1383,13 @@ Cabecera
 	}
 	.ocultar-escritorio{
 		display: none !important;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1600px){
+	.servicios:before{
+		width: 30%;
+    	height: 55%;
 	}
 }
 
