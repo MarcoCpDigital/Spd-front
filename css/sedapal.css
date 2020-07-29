@@ -132,6 +132,87 @@ Menu Full Page
     float: right;
 }
 
+.cabecera nav li{
+	position: relative;
+}
+
+/*.cabecera nav ul li:hover > ul.submenu{
+	display: inline-grid;
+}*/
+
+.cabecera nav ul.submenu{
+	padding-top: 35%;
+	position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 200px;
+    text-align: left;
+    display: inline-grid;
+    border-radius: 0 0 5px 5px;
+}
+
+.cabecera nav ul.submenu li{
+	background-color: #157FCE;
+	margin: 0 !important;
+	padding: .5em 1.5em;
+	border-bottom: 1px solid #ffffff75;
+}
+
+.cabecera nav ul.submenu li.dropdown:after{
+    content: '';
+    background: url(../img/flecha-desplegable.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    float: right;
+    margin-top: 5px;
+}
+
+.cabecera nav ul.submenu li:hover{
+	background-color: #fff;
+	color: #157FCE;
+}
+
+.cabecera nav ul.submenu li:hover a{
+	color: #157FCE;
+}
+
+.cabecera nav ul.submenu li:last-child{
+	border-radius: 0 0 5px 5px;
+	border-bottom: none;
+}
+
+.cabecera nav ul.submenu li a{
+	font-weight: 300;
+}
+
+.cabecera nav ul.submenu  ul.submenu{
+	top: 0;
+	left: 100%;
+	padding-top: 0;
+}
+
+.cabecera nav ul.submenu  ul.submenu li{
+	background-color: #fff;
+}
+
+.cabecera nav ul.submenu  ul.submenu li:hover{
+	background-color: #0969B1;
+}
+
+.cabecera nav ul.submenu  ul.submenu li a{
+	color: #0969B1;
+}
+
+.cabecera nav ul.submenu  ul.submenu li:hover a{
+	color: #fff;
+}
+
 /*
 Cabecera
 */
