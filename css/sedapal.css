@@ -1353,6 +1353,9 @@ Cabecera
 	    width: 300px;
 	    height: 390px;
 	}
+	.ocultar-escritorio{
+		display: none !important;
+	}
 }
 
 /*Large devices (desktops, 992px and up)*/
