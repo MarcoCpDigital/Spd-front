@@ -3,15 +3,15 @@ $(".menu-hamburguesa").click(function(){
 	$(".menu-fullpage").toggle("abierto");
 });
 
-$(".submenu").hide();
+// $(".submenu").hide();
 // $("nav ul li").hover(function(){
 // 	$(this).parent().find(".submenu:first").toggle("inline-grid");
 // });
-$("nav ul li").hover(function () {
-    $(this).children(".submenu:first").slideDown().show();
-}, function () {
-    $(this).children(".submenu:first").slideUp();
-});
+// $("nav ul li").hover(function () {
+//     $(this).children(".submenu:first").slideDown().show();
+// }, function () {
+//     $(this).children(".submenu:first").slideUp();
+// });
 
 $(".desplegable").click(function(){
 	$(this).parent().find(".submenu:first").toggle("abierto");

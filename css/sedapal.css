@@ -136,9 +136,10 @@ Menu Full Page
 	position: relative;
 }
 
-/*.cabecera nav ul li:hover > ul.submenu{
-	display: inline-grid;
-}*/
+.cabecera nav ul li:hover > ul.submenu{
+	/*display: inline-grid;*/
+	transform: scaleY(1);
+}
 
 .cabecera nav ul.submenu{
 	padding-top: 35%;
@@ -151,6 +152,9 @@ Menu Full Page
     text-align: left;
     display: inline-grid;
     border-radius: 0 0 5px 5px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all .5s;
 }
 
 .cabecera nav ul.submenu li{
